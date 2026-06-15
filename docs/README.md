@@ -1,3 +1,8 @@
+---
+meta:
+  - name: description
+    content: "Fairwinds Pluto | Documentation"
+---
 <div align="center" class="no-border">
   <img src="/img/pluto-logo.png" alt="Pluto Logo">
   <br>
@@ -18,8 +23,6 @@
 
 Pluto is a utility to help users find [deprecated Kubernetes apiVersions](https://k8s.io/docs/reference/using-api/deprecation-guide/) in their code repositories and their helm releases.
 
-## Documentation
-Check out the [documentation at docs.fairwinds.com](https://pluto.docs.fairwinds.com)
 
 ## Purpose
 
@@ -49,50 +52,18 @@ Want to use pluto within your GitHub workflows?
     pluto detect-files -d pkg/finder/testdata
 ```
 
-## Notice: Registry Migration and Immutable Images (v5.23.6 → v5.24.0)
-
-Starting with **v5.24.0**:
-
-- Images moved to `us-docker.pkg.dev/fairwinds-ops/oss/pluto`
-- `quay.io/fairwinds/pluto` is deprecated
-
-### Required action
-
-```diff
-- quay.io/fairwinds/pluto:<tag>
-+ us-docker.pkg.dev/fairwinds-ops/oss/pluto:<tag>
-```
-
----
-
-## Immutable and signed images
-
-* Images are now **signed**
-* Tags are **immutable**
-* No more floating tags:
-
-  * `v5`
-  * `v5.23`
-  * `latest`
-
-Use full version tags:
-
-```
-us-docker.pkg.dev/fairwinds-ops/oss/pluto:v<major>.<minor>.<patch>
-```
-
-Or pin by digest:
-
-```
-us-docker.pkg.dev/fairwinds-ops/oss/pluto@sha256:<digest>
-```
-
 <!-- Begin boilerplate -->
 ## Join the Fairwinds Open Source Community
 
 The goal of the Fairwinds Community is to exchange ideas, influence the open source roadmap,
 and network with fellow Kubernetes users.
-[Chat with us on Slack](https://join.slack.com/t/fairwindscommunity/shared_invite/zt-2na8gtwb4-DGQ4qgmQbczQyB2NlFlYQQ)
+[Chat with us on Slack](https://join.slack.com/t/fairwindscommunity/shared_invite/zt-e3c6vj4l-3lIH6dvKqzWII5fSSFDi1g)
+or
+[join the user group](https://www.fairwinds.com/open-source-software-user-group) to get involved!
+
+<a href="https://www.fairwinds.com/t-shirt-offer?utm_source=pluto&utm_medium=pluto&utm_campaign=pluto-tshirt">
+  <img src="https://www.fairwinds.com/hubfs/Doc_Banners/Fairwinds_OSS_User_Group_740x125_v6.png" alt="Love Fairwinds Open Source? Share your business email and job title and we'll send you a free Fairwinds t-shirt!" />
+</a>
 
 ## Other Projects from Fairwinds
 
@@ -107,5 +78,9 @@ Or [check out the full list](https://www.fairwinds.com/open-source-software?utm_
 If you're interested in running Pluto in multiple clusters,
 tracking the results over time, integrating with Slack, Datadog, and Jira,
 or unlocking other functionality, check out
-[Fairwinds Insights](https://fairwinds.com/insights),
+[Fairwinds Insights](https://www.fairwinds.com/pluto-user-insights-demo?utm_source=pluto&utm_medium=pluto&utm_campaign=pluto),
 a platform for auditing and enforcing policy in Kubernetes clusters.
+
+<a href="https://www.fairwinds.com/pluto-user-insights-demo?utm_source=pluto&utm_medium=ad&utm_campaign=plutoad">
+  <img src="https://www.fairwinds.com/hubfs/Doc_Banners/Fairwinds_Pluto_Ad.png" alt="Fairwinds Insights" />
+</a>
